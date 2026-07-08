@@ -33,7 +33,7 @@ public:
         }
         end = prev;
 
-        ListNode *l = head, *r = end, *lnxt = head->next, *rnxt = end->next;
+        ListNode *l = head, *r = end, *lnxt, *rnxt;
         while (r != mid) {
             lnxt = l->next; rnxt = r->next;
             if (l != mid) {
@@ -52,3 +52,4 @@ public:
         return;
     }
 };
+
